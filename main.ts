@@ -22,10 +22,6 @@ let message = `${famous_person} once said "${Quote}"`
  // Question 6 //
 
 
-
-
-
-
 // Question 7 //
 // Addition //
 console.log(5+3);
@@ -36,8 +32,10 @@ console.log(2 * 4);
 // Division
 console.log(16 / 2);
 
+// Question 8//
+console.log(5 + 3);
+console.log(5 + 3);
+console.log(5 + 3);
+console.log(5 + 3);
+
 // Question 9//
-console.log(8);
-console.log(8);
-console.log(8);
-console.log(8);
