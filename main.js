@@ -31,3 +31,27 @@ console.log(5 + 3);
 console.log(5 + 3);
 console.log(5 + 3);
 // Question 9//
+let favoritenumber = 7;
+let messages = `My favorite number is ${favoritenumber}`;
+console.log(messages);
+// Question 10//
+// Program 1: Print "Hello Shariq"
+// Author: Muhammad Shariq
+// Date: 2023-11-24
+console.log("Hello Shariq");
+// This program prints the message "Hello Shariq" to the console.
+// Program 2: Calculate the sum of two numbers
+// Author: Muhammad Shariq
+// Date: 2023-11-24
+function sum(a, b) {
+    return a + b;
+}
+// This program defines a function called 'sum' that takes two numbers as input and returns their sum.
+// Question 11//
+// Store names of friends in an array
+const names = ["Hamza", "Khurram", "Rashid", "Shahid", "Shahad"];
+// // Loop through each name and print it
+for (const name of names) {
+    console.log(name);
+}
+// Question 12//
