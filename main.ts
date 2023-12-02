@@ -21,8 +21,17 @@
 
 //  // Question 6 //
 
+// const personNameWithWhitespace = "\t   Muhammad Shariq \n";
+
+// console.log("Person's name with whitespace:", personNameWithWhitespace);
+
+// const personNameStripped = personNameWithWhitespace.trim();
+
+// console.log("Person's name after stripping whitespace:", personNameStripped);
+
 
 // // Question 7 //
+
 // // Addition //
 // console.log(5+3);
 // //Subtraction
@@ -650,3 +659,199 @@
 
 
 // Question 36 //
+
+// Call the function
+// makeShirt('large', 'I love T-Shirt!');
+
+// function makeShirt(size: string, message: string): string {
+//   return `You ordered a ${size} shirt with the message "${message}".`;
+// }
+
+// // Call the function and store the result in a variable
+// const shirtDescription = makeShirt('large', 'I love T-Shirt!');
+// console.log(shirtDescription);
+
+
+// Question 37 //
+
+// function makeShirt(size: string = "large", message: string = "I love TypeScript!"): void {
+//   console.log(`You ordered a ${size} shirt with the message "${message}".`);
+// }
+
+// // Call the function with default arguments
+// makeShirt();
+// makeShirt("medium");
+
+// // Call the function with a different message
+// makeShirt("smaall")
+
+// Question 38 //
+
+// function describeCity(cityName: string, country: string = "Pakistan"): void {
+//     console.log(`${cityName} is in ${country}.`);
+//   }
+  
+//   // Call the function for three different cities
+//   describeCity("Karachi");
+//   describeCity("Paris", "France");
+//   describeCity("Tokyo", "Japan");
+  
+  // Question 39 //
+
+//   function cityCountry(cityName: string, countryName: string): string {
+//     return `${cityName}, ${countryName}`;
+//   }
+  
+//   // Call the function with three city-country pairs
+//   const cityCountry1 = cityCountry("Lahore", "Pakistan");
+//   console.log(cityCountry1); // Output: Lahore, Pakistan
+  
+//   const cityCountry2 = cityCountry("Dehli", "India");
+//   console.log(cityCountry2); // Output: Paris, France
+  
+//   const cityCountry3 = cityCountry("Tokyo", "Japan");
+//   console.log(cityCountry3); // Output: Tokyo, Japan
+  
+
+// Question 40 //
+
+// interface Album {
+//     artistName: string;
+//     albumTitle: string;
+//     numberOfTracks?: number;
+//   }
+  
+//   function makeAlbum(artistName: string, albumTitle: string, numberOfTracks?: number): Album {
+//     const album: Album = {
+//       artistName,
+//       albumTitle,
+//     };
+  
+//     if (numberOfTracks) {
+//       album.numberOfTracks = numberOfTracks;
+//     }
+  
+//     return album;
+//   }
+  
+//   // Create three albums
+//   const album1 = makeAlbum("The Beatles", "Sgt. Pepper's Lonely Hearts Club Band");
+//   console.log(album1); // Output: { artistName: 'The Beatles', albumTitle: 'Sgt. Pepper's Lonely Hearts Club Band' }
+  
+//   const album2 = makeAlbum("Pink Floyd", "The Dark Side of the Moon");
+//   console.log(album2); // Output: { artistName: 'Pink Floyd', albumTitle: 'The Dark Side of the Moon' }
+  
+//   const album3 = makeAlbum("Nirvana", "Nevermind", 14);
+//   console.log(album3); // Output: { artistName: 'Nirvana', albumTitle: 'Nevermind', numberOfTracks: 14 }
+  
+  // Question 41 //
+
+//   const magicians:string[] = ['David Copperfield', 'Penn Jillette', 'Teller', 'Dynamo', 'Criss Angel'];
+
+// function showMagicians(magicianNames: string[]): void {
+//   console.log('Presenting the amazing magicians:');
+//   for (const magician of magicianNames) {
+//     console.log(`   - ${magician}`);
+//   }
+// }
+
+// showMagicians(magicians);
+
+// Question 42 //
+
+// const magicians = ['David Copperfield', 'Penn Jillette', 'Teller', 'Dynamo', 'Criss Angel'];
+
+// function makeGreat(magicians: string[]): void {
+//   for (let i = 0; i < magicians.length; i++) {
+//     magicians[i] = `${magicians[i]} the Great`;
+//   }
+// }
+
+// function showMagicians(magicianNames: string[]): void {
+//   console.log('Presenting the amazing magicians:');
+//   for (const magician of magicianNames) {
+//     console.log(`   - ${magician}`);
+//   }
+// }
+
+// makeGreat(magicians);
+// showMagicians(magicians);
+
+// Question 43 //
+
+// const magicians:string[] = ['David Copperfield', 'Penn Jillette', 'Teller', 'Dynamo', 'Criss Angel'];
+
+// function makeGreat(magicians: string[]): string[] {
+//   const greatMagicians = [];
+
+//   for (const magician of magicians) {
+//     greatMagicians.push(`${magician} the Great`);
+//   }
+
+//   return greatMagicians;
+// }
+
+// function showMagicians(magicianNames: string[]): void {
+//   console.log('Presenting the amazing magicians:');
+//   for (const magician of magicianNames) {
+//     console.log(`   - ${magician}`);
+//   }
+// }
+
+// const originalMagicians = [...magicians];
+// const greatMagicians = makeGreat(magicians);
+
+// console.log('Original magicians:');
+// showMagicians(originalMagicians);
+
+// console.log('\nGreat magicians:');
+// showMagicians(greatMagicians);
+
+// Question 44 //
+
+// function Sandwich(sandwichIngredients: string[]): void {
+//     console.log('Preparing a sandwich with:');
+//     for (const ingredient of sandwichIngredients) {
+//       console.log(`   - ${ingredient}`);
+//     }
+//   }
+  
+//   // Call the function with different numbers of arguments
+//   Sandwich(['ham', 'cheese']);
+//   Sandwich(['turkey', 'lettuce', 'tomato']);
+//   Sandwich(['roast beef', 'provolone', 'horseradish sauce']);
+  
+// Question 45 //
+
+// interface Car {
+//     manufacturer: string;
+//     modelName: string;
+//     optionalFeatures?: string[];
+//     color?: string;
+//   }
+  
+//   function makeCar(manufacturer: string, modelName: string, ...optionalFeatures: string[]): Car {
+//     const car: Car = {
+//       manufacturer,
+//       modelName,
+//     };
+  
+//     if (optionalFeatures.length > 0) {
+//       car.optionalFeatures = optionalFeatures;
+//     }
+  
+//     return car;
+//   }
+  
+//   // Create a car with optional features and color
+//   const myCar = makeCar('Toyota', 'Camry', 'sunroof', 'leather seats', 'red');
+//   console.log(myCar); // Output: { manufacturer: 'Toyota', modelName: 'Camry', optionalFeatures: [ 'sunroof', 'leather seats' ], color: 'red' }
+  
+//   // Create a car with just optional features
+//   const anotherCar = makeCar('Honda', 'Accord', 'heated seats', 'premium sound system');
+//   console.log(anotherCar); // Output: { manufacturer: 'Honda', modelName: 'Accord', optionalFeatures: [ 'heated seats', 'premium sound system' ] }
+  
+//   // Create a car with just color
+//   const thirdCar = makeCar('Tesla', 'Model 3', 'Yellow');
+//   console.log(thirdCar); // Output: { manufacturer: 'Tesla', modelName: 'Model 3', color: 'Yellow' }
+  
