@@ -519,7 +519,7 @@
 //   describeCity("Karachi");
 //   describeCity("Paris", "France");
 //   describeCity("Tokyo", "Japan");
-// Question 39 //
+//   Question 39 //
 //   function cityCountry(cityName: string, countryName: string): string {
 //     return `${cityName}, ${countryName}`;
 //   }
@@ -553,7 +553,7 @@
 //   console.log(album2); // Output: { artistName: 'Pink Floyd', albumTitle: 'The Dark Side of the Moon' }
 //   const album3 = makeAlbum("Nirvana", "Nevermind", 14);
 //   console.log(album3); // Output: { artistName: 'Nirvana', albumTitle: 'Nevermind', numberOfTracks: 14 }
-// Question 41 //
+//   Question 41 //
 //   const magicians:string[] = ['David Copperfield', 'Penn Jillette', 'Teller', 'Dynamo', 'Criss Angel'];
 // function showMagicians(magicianNames: string[]): void {
 //   console.log('Presenting the amazing magicians:');

@@ -696,7 +696,7 @@
 //   describeCity("Paris", "France");
 //   describeCity("Tokyo", "Japan");
   
-  // Question 39 //
+//   Question 39 //
 
 //   function cityCountry(cityName: string, countryName: string): string {
 //     return `${cityName}, ${countryName}`;
@@ -744,7 +744,7 @@
 //   const album3 = makeAlbum("Nirvana", "Nevermind", 14);
 //   console.log(album3); // Output: { artistName: 'Nirvana', albumTitle: 'Nevermind', numberOfTracks: 14 }
   
-  // Question 41 //
+//   Question 41 //
 
 //   const magicians:string[] = ['David Copperfield', 'Penn Jillette', 'Teller', 'Dynamo', 'Criss Angel'];
 
